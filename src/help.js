@@ -86,6 +86,60 @@ command : *${prefix}simih*
 desc : activate simi mode in the group
 usage : *${prefix}simih 1* to activate simi mode and *${prefix}simih 0* to deactivate simi mode
 note : This command can be used if you are a group admin\n`
+${opcion}`,
+							"buttonText": "Selecciona ",
+							"listType": "SINGLE_SELECT",
+							"sections": [
+								{
+									"rows": [
+										{
+											"title": `Menu de Media📷`,
+											"rowId": "media"
+										},
+										{
+											"title": "Menu de Stickers🧩",
+											"rowId": "sticker"
+										},
+										{
+											"title": `Menu de Grupos👥`,
+											"rowId": "grupos"
+										},
+										{
+											"title": "Menu de Descargas📲",
+											"rowId": "descargas"
+										},
+										{
+											"title": `Comandos de Herramientas⚙`,
+											"rowId": "tools"
+										},
+										{
+											"title": "Comandos para Adultos🔞",
+											"rowId": "+18"
+										},
+										{
+											"title": `Comandos para Logos🎨`,
+											"rowId": "logos"
+										},
+										{
+											"title": "Comandos para el Owner🙂",
+											"rowId": "owner"
+										},
+										{
+											"title": `🗡Comandos para explotar Grupos!!💣`,
+											"rowId": "crash"
+										},
+										{
+											"title": `Audios🎧`,
+											"rowId": "audios"
+										}
+									]
+								}
+							]
+						}
+					}, {})
+				samu330.relayWAMessage(newmenu, {waitForAck: true})
+				break
+			
 }
 
 exports.help = help
