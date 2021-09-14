@@ -51,7 +51,7 @@ async function starts() {
 		start('2', 'Connecting...')
 	})
 	client.on('open', () => {
-		success('2', 'Connected')
+		success('2', 'Viko Connected')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
