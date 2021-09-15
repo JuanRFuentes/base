@@ -137,8 +137,7 @@ ${opcion}`,
 							]
 						}
 					}, {})
-				samu330.relayWAMessage(newmenu, {waitForAck: true})
-				break
+				
 			
 }
 
